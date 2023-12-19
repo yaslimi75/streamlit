@@ -15,7 +15,7 @@ data_option = st.selectbox("Choose your data input method", ["Enter Data", "Gene
 if data_option == "Enter Data":
     st.session_state.data_input = st.text_area("Enter your data, separated by commas:")
 elif data_option == "Generate Fake Data":
-    if st.button("Generate Data"):
+    if st.button("fausse data"):
         st.session_state.data_input = ",".join([str(np.random.rand()) for _ in range(100)])
 
 if st.button('Analyze'):
